@@ -10,6 +10,18 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
+//= require materialize-sprockets
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $('.carousel').carousel({indicators: true});
+
+});
+autoplay();
+function autoplay() {
+  $('.carousel').carousel('next');
+  setTimeout(autoplay, 4500);
+}

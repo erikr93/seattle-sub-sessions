@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+@import "materialize";
+
+.nav-wrapper{
+    background: black;
+}
+.carousel-item{
+    width: 600px;
+    height: 1000px;
+}

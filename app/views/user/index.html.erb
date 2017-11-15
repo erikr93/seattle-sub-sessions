@@ -1,0 +1,31 @@
+<h1>Sign Up</h1>
+
+<%= form_for :user do |form| %>
+
+        <div>
+            <div>
+                <div >
+                    <%= form.text_field :name, id: 'name' %>
+                    <%= form.label :name, for: 'name' %>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <%= form.text_field :email, class: 'f', id: 'email' %>
+                    <%= form.label :email, class: '', for: 'email' %>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <%= form.password_field :password, class: '', id: 'password' %>
+                    <%= form.label :password, class: '', for: 'password' %>
+                </div>
+            </div>
+        </div>
+
+        <%= form.submit 'SIGN UP' %>
+        <%end%>
