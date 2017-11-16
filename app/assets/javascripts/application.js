@@ -17,10 +17,9 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-  $('.carousel').carousel({indicators: true});
-
+  $('.carousel').carousel();
 });
-autoplay();
+ autoplay();
 function autoplay() {
   $('.carousel').carousel('next');
   setTimeout(autoplay, 4500);

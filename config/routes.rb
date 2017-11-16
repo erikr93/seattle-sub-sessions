@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get "residents" => 'resident#index'
+
+  get "profile" => 'profile#index'
+
     resources :users do
         member do
           get :following, :followers

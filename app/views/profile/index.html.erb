@@ -1,0 +1,10 @@
+<h1>Profile Page</h1>
+<%if @current_user%>
+<%= button_to 'logout', logout_path, :method => :delete %>
+<p>Name: <%= @current_user.try(:name) %></p>
+<h6><%= @current_user.followers.count %></h6>
+<%else%>
+<a href="/user">Sign up</a>
+<a href="/login">Log In</a>
+<%end%>
+<%= render "partials/follow_buttom" %>

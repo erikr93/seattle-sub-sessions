@@ -1,14 +1,23 @@
+<div class='row'>
+    <div class="side-bar grey darken-1 col s12 m4 l3">
+        <%= render "partials/left-side" %>
+    </div>
 
-<div class="container">
-    <h1>Profile Page</h1>
-<%if @current_user%>
-<%= button_to 'logout', logout_path, :method => :delete %>
-<p>Name: <%= @current_user.try(:name) %></p>
-<h6><%= @current_user.followers.count %></h6>
-<%else%>
-<a href="/user">Sign up</a>
-<a href="/login">Log In</a>
-<%end%>
-<%= render "partials/follow_buttom" %>
-<%= render "partials/slides" %>
+
+    <div class="col s12 m4 l7 grey darken-3">
+        <div class="container">
+            <img class="logo" src="assets/subsessionslogo.png"/>
+            <!-- <h2><span class="sea-header">Seattle</span> <span class="sub-header">Sub</span><span class="sea-header"> Sessions</span></h2> -->
+            <%= render "partials/slides" %>
+            <p class="statement">Seattle's favorite Dubstep monthly falling on the 3rd Saturday of every month at Club Contour.</p>
+            <p class="address">807 1st Ave</p>
+            <p class="address">Seattle, WA</p>
+
+
+        </div>
+    </div>
+
+    <div class="side-bar grey darken-1 col s12 m4 l2">
+        <%= render "partials/right-side" %>
+    </div>
 </div>
