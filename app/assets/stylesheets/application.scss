@@ -33,6 +33,7 @@ body{
 }
 .side-bar{
     height: 100%;
+    width: 100%;
 }
 
 .facebook{
@@ -41,8 +42,10 @@ body{
     padding: 4%;
 }
 .instagram{
-    width: 100%;
-    height: 100%;
+    padding-top: 10%;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
 }
 .snapchat{
     width: 50%;
@@ -55,9 +58,9 @@ body{
     padding: 4%;
 }
 .mail{
-    width: 80%;
-    height: 80%;
-    padding: 4%;
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
 }
 .landing-header{
     font-size: 48px;
@@ -78,14 +81,14 @@ body{
 }
 .event-header{
     font-size: 20px;
-    border-bottom: 1px red;
+    text-align: center;
 }
 .event-img{
     width: 120%;
 }
 .rsvp{
     font-size: 22px;
-    margin-bottom: 17%;
+    margin-bottom: 7%;
     margin-top: 4%;
 }
 .btn{
@@ -95,7 +98,12 @@ body{
     background: red;
 }
 .upcoming{
-    border-bottom: 1px red;
+    border-bottom: 3px red solid;
+    text-align: center;
+}
+.socials{
+    border-bottom: 3px red solid;
+    text-align: center;
 }
 .statement{
     text-align: center;
@@ -107,4 +115,15 @@ body{
     font-size: 16px;
     color: white;
     margin-top: -1%;
+}
+.handle{
+    margin-left: 30%;
+    margin-top: -30%;
+}
+.social-media{
+    padding-top: 20%;
+    margin-left: -25%;
+}
+.fb-like{
+    width: 100%;
 }
